@@ -1,44 +1,29 @@
-import { Container, FooterSection, Link, Links, SectionTitle } from './styles'
+import { Link } from 'react-router-dom'
+import faceSrc from '../../assets/images/face.png'
+import instaSrc from '../../assets/images/insta.png'
+import LogoImgHome from '../../assets/images/logo.png'
+import twSrc from '../../assets/images/twitter.png'
 
-const currentYear = new Date().getFullYear()
+import * as S from './styles'
 
 const Footer = () => (
-  <Container>
-    <div className="container">
-      <FooterSection>
-        <SectionTitle>Categorias</SectionTitle>
-        <Links>
-          <li>
-            <Link>Popular</Link>
-          </li>
-          <li>
-            <Link>SUV</Link>
-          </li>
-          <li>
-            <Link>Sedan</Link>
-          </li>
-          <li>
-            <Link>Esportivo</Link>
-          </li>
-        </Links>
-      </FooterSection>
-      <FooterSection>
-        <SectionTitle>Acesso rápido</SectionTitle>
-        <Links>
-          <li>
-            <Link>Novidades</Link>
-          </li>
-          <li>
-            <Link>Promoções</Link>
-          </li>
-          <li>
-            <Link>Em breve</Link>
-          </li>
-        </Links>
-      </FooterSection>
-      <p>{currentYear} - &copy; SHIFT Todos os direitos reservados</p>
-    </div>
-  </Container>
+  <S.Footers className="container">
+    <S.SectionFooter>
+      <Link title="Clique aqui para retornar a pagina home" to="/">
+        <img className="imagemLogo" src={LogoImgHome} alt="efood" />
+      </Link>
+      <S.RedeSociais>
+        <img src={instaSrc} alt="Instagram" />
+        <img src={faceSrc} alt="Facebook" />
+        <img src={twSrc} alt="Twitter" />
+      </S.RedeSociais>
+    </S.SectionFooter>
+    <S.Titulo>
+      A efood é uma plataforma para divulgação de estabelecimentos, a
+      responsabilidade pela entrega, qualidade dos produtos é toda do
+      estabelecimento contratado.
+    </S.Titulo>
+  </S.Footers>
 )
 
 export default Footer
