@@ -9,25 +9,16 @@ const Footer = () => (
         <SectionTitle>Categorias</SectionTitle>
         <Links>
           <li>
-            <Link>RPG</Link>
+            <Link>Popular</Link>
           </li>
           <li>
-            <Link>Ação</Link>
+            <Link>SUV</Link>
           </li>
           <li>
-            <Link>Aventura</Link>
+            <Link>Sedan</Link>
           </li>
           <li>
-            <Link>Esportes</Link>
-          </li>
-          <li>
-            <Link>Simulação</Link>
-          </li>
-          <li>
-            <Link>Estratégia</Link>
-          </li>
-          <li>
-            <Link>FPS</Link>
+            <Link>Esportivo</Link>
           </li>
         </Links>
       </FooterSection>
@@ -45,7 +36,7 @@ const Footer = () => (
           </li>
         </Links>
       </FooterSection>
-      <p>{currentYear} - &copy; E-PLAY Todos os direitos reservados</p>
+      <p>{currentYear} - &copy; SHIFT Todos os direitos reservados</p>
     </div>
   </Container>
 )

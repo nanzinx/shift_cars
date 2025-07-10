@@ -1,0 +1,12 @@
+
+<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="148" height="38" rx="8" ry="8" fill="none" stroke="#004d26" stroke-width="2"/>
+
+  <!-- Texto SHIFT -->
+  <text x="12" y="28" font-family="Arial, sans-serif" font-size="22" fill="#004d26">shift</text>
+
+  <!-- Ícone de carro -->
+  <g transform="translate(90, 10)" fill="#004d26">
+    <path d="M8 14c0-1.5 1.2-2.8 2.8-2.8h10.5c1.1 0 2.1.7 2.5 1.8l1.8 4.5c.2.6.3 1.2.3 1.9v1.5c0 .8-.7 1.5-1.5 1.5h-.8c0 1.2-.9 2.3-2.3 2.3s-2.3-1-2.3-2.3h-8c0 1.2-.9 2.3-2.3 2.3s-2.3-1-2.3-2.3h-.8c-.8 0-1.5-.7-1.5-1.5v-1.5c0-.4.1-.8.2-1.2l2-5.4zM11 12c-.6 0-1.2.5-1.2 1.2s.5 1.2 1.2 1.2 1.2-.5 1.2-1.2S11.6 12 11 12zM22 12c-.6 0-1.2.5-1.2 1.2s.5 1.2 1.2 1.2 1.2-.5 1.2-1.2S22.6 12 22 12z"/>
+  </g>
+</svg>

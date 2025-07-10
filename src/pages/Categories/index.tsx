@@ -6,7 +6,7 @@ import civic from '../../assets/images/civic.jpeg'
 import hrv from '../../assets/images/hrv.jpg'
 import porsche from '../../assets/images/porsche.jpg'
 
-const promocoes: Car[] = [
+const popular: Car[] = [
   {
     id: 1,
     category: 'Popular',
@@ -45,7 +45,7 @@ const promocoes: Car[] = [
   }
 ]
 
-const naLoja: Car[] = [
+const suv: Car[] = [
   {
     id: 5,
     category: 'SUV',
@@ -80,11 +80,83 @@ const naLoja: Car[] = [
   }
 ]
 
-const Home = () => (
+const sedan: Car[] = [
+  {
+    id: 9,
+    category: 'SUV',
+    description: 'SUV compacto com visual moderno e interior espaçoso.',
+    title: 'Honda HR-V 2024',
+    infos: ['R$ 155.000,00'],
+    image: hrv
+  },
+  {
+    id: 10,
+    category: 'Sedan',
+    description: 'Sedan esportivo com ótimo custo-benefício e design refinado.',
+    title: 'Honda Civic 2023',
+    infos: ['R$ 120.000,00'],
+    image: civic
+  },
+  {
+    id: 11,
+    category: 'Esportivo',
+    description: 'Esportivo de luxo com alto desempenho e estilo icônico.',
+    title: 'Porsche 911',
+    infos: ['R$ 1.200.000,00'],
+    image: porsche
+  },
+  {
+    id: 12,
+    category: 'Popular',
+    description: 'Hatch compacto, econômico e ideal para o dia a dia urbano.',
+    title: 'GOL G6 2013',
+    infos: ['R$ 32.000,00'],
+    image: gol
+  }
+]
+
+const esportivo: Car[] = [
+  {
+    id: 13,
+    category: 'SUV',
+    description: 'SUV compacto com visual moderno e interior espaçoso.',
+    title: 'Honda HR-V 2024',
+    infos: ['R$ 155.000,00'],
+    image: hrv
+  },
+  {
+    id: 14,
+    category: 'Sedan',
+    description: 'Sedan esportivo com ótimo custo-benefício e design refinado.',
+    title: 'Honda Civic 2023',
+    infos: ['R$ 120.000,00'],
+    image: civic
+  },
+  {
+    id: 15,
+    category: 'Esportivo',
+    description: 'Esportivo de luxo com alto desempenho e estilo icônico.',
+    title: 'Porsche 911',
+    infos: ['R$ 1.200.000,00'],
+    image: porsche
+  },
+  {
+    id: 16,
+    category: 'Popular',
+    description: 'Hatch compacto, econômico e ideal para o dia a dia urbano.',
+    title: 'GOL G6 2013',
+    infos: ['R$ 32.000,00'],
+    image: gol
+  }
+]
+
+const Categories = () => (
   <>
-    <ProductsList cars={promocoes} title="Promoções" background="gray" />
-    <ProductsList cars={naLoja} title="Na Loja" background="black" />
+    <ProductsList cars={popular} title="Popular" background="gray" />
+    <ProductsList cars={suv} title="SUV" background="black" />
+    <ProductsList cars={sedan} title="Sedan" background="gray" />
+    <ProductsList cars={esportivo} title="Esportivo" background="black" />
   </>
 )
 
-export default Home
+export default Categories
