@@ -5,6 +5,7 @@ import RestaurantRatingImg from '../../assets/images/estrela.png'
 
 import Tag from '../../components/Tag'
 import Botao from '../Button'
+import ModalPoupap from '../Modal'
 
 import * as S from './styles'
 
@@ -40,6 +41,7 @@ const Product: React.FC<ProductProps> = ({
   description,
   to,
   background,
+  currentItem,
   shouldTruncateDescription = false
 }) => {
   const location = useLocation()
@@ -111,6 +113,16 @@ const Product: React.FC<ProductProps> = ({
           </S.ContainerDescritivo>
         </S.CardRestaurant>
       </S.CardConteiner>
+      {isModalVisible && currentItem && (
+        <ModalPoupap
+          onClose={toggleModal}
+          foto={currentItem.foto}
+          descricao={currentItem.descricao}
+          porcao={currentItem.porcao}
+          preco={currentItem.preco}
+          nome={currentItem.nome}
+        />
+      )}
     </div>
   )
 }

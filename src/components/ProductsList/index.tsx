@@ -3,6 +3,7 @@ import { useLocation, useParams } from 'react-router-dom'
 
 import Product from '../Product'
 
+import Loader from '../Loader'
 import { ProductListContainer, ProductListItem } from './styles'
 
 export type Props = {
@@ -17,6 +18,7 @@ const ProductList: React.FC<Props> = ({
   title,
   background,
   efoods,
+  isLoading,
   isCardapio = false
 }) => {
   const { id } = useParams<{ id: string }>()
@@ -57,6 +59,10 @@ const ProductList: React.FC<Props> = ({
       tags.push('Destaque da semana')
     }
     return tags
+  }
+
+  if (isLoading) {
+    return <Loader />
   }
 
   return (
