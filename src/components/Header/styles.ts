@@ -86,7 +86,7 @@ export const ContainerHeader = styled.div`
 export const RestaurantName = styled(ContainerHeader)`
   font-size: 18px;
   font-weight: 900;
-  justify-content: left;
+  justify-content: center;
   padding-top: none;
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -100,7 +100,7 @@ export const RestaurantName = styled(ContainerHeader)`
 export const CarrinhoDeProdutos = styled(ContainerHeader)`
   font-size: 18px;
   font-weight: 900;
-  justify-content: right;
+  justify-content: center;
   padding-top: none;
 
   @media (max-width: ${breakpoints.tablet}) {
